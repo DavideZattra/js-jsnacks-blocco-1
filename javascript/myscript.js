@@ -80,21 +80,21 @@
  * se è dispari inseriscilo nell'array.
 */
 
-let numbersContainer = [];
+// let numbersContainer = [];
 
-for (i = 0; i < 6; i++){
+// for (i = 0; i < 6; i++){
 
-    let userNumber = parseInt(prompt('Inserisci un numero'));
+//     let userNumber = parseInt(prompt('Inserisci un numero'));
 
-    if (userNumber % 2 != 0){
+//     if (userNumber % 2 != 0){
 
-            numbersContainer.push(userNumber)
+//             numbersContainer.push(userNumber)
 
-    }
+//     }
 
-}
+// }
 
-console.log(numbersContainer);
+// console.log(numbersContainer);
 
 /**
  * Esercizio 5
@@ -236,23 +236,28 @@ console.log(numbersContainer);
  *  Mostriamo in HTML le due liste in parallelo
 */
 
-// let listaNomi = ["Adam", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward"];
-// let listaCognomi = ["Anderson", "Ashwoon", "Aikin", "Bateman", "Bongard", "Bowers", "Boyd", "Cannon", "Cast", "Deitz", "Dewalt", "Ebner", "Frick", "Hancock", "Haworth", "Hesch"];
+let listaNomi = ["Adam", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward"];
+let listaCognomi = ["Anderson", "Ashwoon", "Aikin", "Bateman", "Bongard", "Bowers", "Boyd", "Cannon", "Cast", "Deitz", "Dewalt", "Ebner", "Frick", "Hancock", "Haworth", "Hesch"];
 
 
-// for (let i = 0; i < listaCognomi.length; i++){
+for (let i = 0; i < listaCognomi.length; i++){
 
-//     if ( listaNomi.length != listaCognomi.length){
+    if ( listaNomi.length != listaCognomi.length){
 
-//         listaNomi.push(listaNomi[i]);
+        listaNomi.push(listaNomi[i]);
         
-//     } else if (listaNomi.length == listaCognomi.length){
+    } else if (listaNomi.length == listaCognomi.length){
         
-//         document.getElementById("ms_name-list").innerHTML += '<li>' + listaNomi[i] + '</li>' ;
-//         document.getElementById("ms_surname-list").innerHTML += '<li>' + listaCognomi[i] + '</li>' ;
+        for (j = 0; j < listaCognomi.length; j++){
 
-//     }
+            document.getElementById("ms_name-list").innerHTML += '<li>' + listaNomi[j] + '</li>' ;
+            document.getElementById("ms_surname-list").innerHTML += '<li>' + listaCognomi[j] + '</li>' ;
 
-//     console.log(listaNomi.length);
 
-// }
+        }
+
+    }
+
+    console.log(listaNomi.length);
+
+}
